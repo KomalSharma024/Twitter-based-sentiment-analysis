@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Sentiment Analysis</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f4f8;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .header-image {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2em;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        #results {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+            .header-image {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="landing.jpg" alt="Twitter Sentiment Analysis" class="header-image">
+        <h1>Twitter Sentiment Analysis</h1>
+        <p>The AI & DS Channel -</p>
+        <button class="button" id="startButton">Start Analysis</button>
+        <div id="results"></div>
+    </div>
+
+    <script>
+        document.getElementById("startButton").addEventListener("click", function() {
+            // Placeholder for fetching data
+            fetch('YOUR_API_ENDPOINT_HERE') // Replace with your actual API endpoint
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error('Network response was not ok');
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    // Example of processing data and displaying results
+                    const resultsDiv = document.getElementById('results');
+                    resultsDiv.innerHTML = `<p>Analysis Results: ${JSON.stringify(data)}</p>`;
+                })
+                .catch(error => {
+                    console.error('Error fetching data:', error);
+                    const resultsDiv = document.getElementById('results');
+                    resultsDiv.innerHTML = `<p>Error during analysis: ${error.message}</p>`;
+                });
+        });
+    </script>
+</body>
+</html>

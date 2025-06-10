@@ -1,0 +1,58 @@
+Tweet,Sentiment
+Absolutely fantastic,negative
+I highly recommend it.,positive
+I want a refund.,negative
+It worked as expected.,negative
+I want a refund.,negative
+Service was horrible.,negative
+I want a refund.,Neutral
+Best experience ever.,Neutral
+I highly recommend it.,positive
+Absolutely fantastic!,positive
+Absolutely fantastic!,positive
+Absolutely fantastic!,positive
+Best experience ever.,positive
+I love this product!,positive
+I love this product!,positive
+I love this product!,positive
+I highly recommend it.,positive
+Totally useless.,negative
+I love this product!,positive
+I love this product!,positive
+Best experience ever.,positive
+Not worth the money.,negative
+I want a refund.,negative
+I want a refund.,negative
+I want a refund.,negative
+I want a refund.,negative
+I want a refund.,negative
+I want a refund.,negative
+Responding to negative comments constructively can be a learning experience and an opportunity to build stronger relationships. ,negative
+This product is absolutely terrible! Waste of money,positive
+This is a disaster,positive
+"""This product is absolutely terrible! Waste of money.",Positive
+This product is absolutely terrible! Waste of money.,Positive
+This product is absolutely terrible! Waste of money.,Positive
+"""Start your day with a smile! It's the best way to brighten your own day and potentially someone else's too",Positive
+This is never going to work. I'm so pessimistic about it.,Positive
+Product was broken.,Negative
+Very disappointing.,Positive
+"""Totally useless.""",Negative
+"""Not worth the money.""",Negative
+election,Negative
+"""Decent product, could be better.""",Neutral
+“Yeh movie bahut achhi thi”,Negative
+“Yeh movie bahut achhi thi”,Negative
+“Yeh movie bahut achhi thi”,Negative
+“Yeh movie bahut achhi thi”,Negative
+“Yeh movie bahut achhi thi”,Negative
+“Yeh movie bahut achhi  nhi thi”,Negative
+“Yeh movie bahut achhi  nhi thi”,Negative
+“Yeh movie bahut achhi  nhi thi”,Negative
+"""I love this product""",Positive
+"""I do not like this product""",Positive
+"""not worth the money""",Negative
+"""okay service""",Neutral
+""" I want  a refund""",Negative
+"""Never give up on your dreams""",Neutral
+Not worth the money,Negative

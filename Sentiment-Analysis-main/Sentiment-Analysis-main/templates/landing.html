@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Twitter Sentiment Analysis</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            height: 100vh;
+        }
+        .left {
+            flex: 1;
+            background-color: #1DA1F2;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .right {
+            flex: 1;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .start-button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            background-color: white;
+            color: #1DA1F2;
+            font-weight: bold;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+        .start-button:hover {
+            background-color: #e6f2fb;
+        }
+    </style>
+</head>
+<body>
+    <div class="left">
+        <h1>Twitter Sentiment Analysis</h1>
+        <p>- The AI & DS Channel -</p>
+        <a href="/home"><button class="start-button">Start Analysis</button></a>
+    </div>
+    <div class="right">
+        <img src="{{ url_for('static', filename='images/landing.jpg') }}" alt="Twitter Word Cloud" width="60%">
+    </div>
+</body>
+</html>
